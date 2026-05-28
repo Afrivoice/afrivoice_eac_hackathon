@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Digital-Umuganda.github.io/afrivoice_eac_hackathon",
+  "homepage": "https://Afrivoice.github.io/afrivoice_eac_hackathon",
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
