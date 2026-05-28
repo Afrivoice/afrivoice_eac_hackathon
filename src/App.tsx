@@ -1,7 +1,7 @@
 // Components
 import Width from "./components/width";
 import Nav from "./components/sections/nav";
-import Hero from "./components/sections/hero";
+import Hero, { OrganizerCard } from "./components/sections/hero";
 import Dates from "./components/sections/dates";
 import Rules from "./components/sections/rules";
 import Prizes from "./components/sections/prizes";
@@ -16,6 +16,9 @@ function App() {
     <main className="w-full h-auto flex flex-col items-center">
       <Nav />
       <Hero />
+      <div className="md:hidden w-full px-4 mb-10">
+        <OrganizerCard />
+      </div>
       <Width className="flex flex-col gap-10 px-4">
         <Overview />
         <Tracks />

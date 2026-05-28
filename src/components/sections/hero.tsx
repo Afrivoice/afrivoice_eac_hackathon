@@ -6,14 +6,26 @@ import mcaai from "../../assets/mcaai.svg";
 import Width from "../width";
 import Title from "../title";
 
+export const OrganizerCard = ({ className = "" }: { className?: string }) => (
+  <Width>
+    <div className={`p-6 bg-white rounded gap-8 flex flex-wrap flex-col sm:flex-row items-center ${className}`}>
+      <p>Organized by:</p>
+      <div className="flex items-center gap-4 flex-wrap justify-center">
+        <img src={mcaai} alt="mcaai" className="w-[200px]" />
+        <img src={logo} alt="gates" className="w-[150px]" />
+      </div>
+    </div>
+  </Width>
+);
+
 const Hero = () => {
   return (
-    <Width className="h-[800px] bg-[#009263] sm:rounded-lg relative flex flex-col items-center overflow-hidden mb-10">
+    <Width className="h-[800px] bg-[#009263] sm:rounded-lg relative flex flex-col items-center overflow-hidden mb-4 md:mb-10">
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-[url('/waves.svg')] bg-cover bg-no-repeat opacity-35 bg-fixed"
       />
-      <div className="z-10 xl:w-3/5 w-full flex flex-col items-center justify-center gap-5 md:mt-56 mt-40">
+      <div className="z-10 xl:w-3/5 w-full flex flex-col items-center justify-center gap-5 mt-56">
         <Title className="text-white">
           AfriVoices Automatic Speech Recognition Hackathon.
         </Title>
@@ -29,11 +41,7 @@ const Hero = () => {
           <span className="font-bold">Kalenjin</span>.
         </p>
       </div>
-      <div className="z-10 absolute bottom-4 md:right-auto right-4 left-4 w-auto p-6 h-auto bg-white rounded gap-8 flex flex-wrap flex-row items-center">
-        <p>Organized by:</p>
-        <img src={mcaai} alt="mcaai" className="w-[200px]" />
-        <img src={logo} alt="gates" className="w-[150px]" />
-      </div>
+      <OrganizerCard className="z-10 absolute bottom-4 left-4 w-auto hidden md:flex" />
     </Width>
   );
 };
