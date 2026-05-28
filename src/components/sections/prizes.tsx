@@ -28,15 +28,15 @@ const Prizes = () => {
     },
     {
       category: "🥈 2nd Place",
-      prize: "500 USD",
+      prize: "600 USD",
     },
     {
-      category: "🥉 Local 1st Place",
+      category: "🥉 Local 1st Place (EAC)",
       prize: "600 USD",
     },
     {
       category: "Community champion award",
-      prize: "500 USD",
+      prize: "300 USD",
     },
   ];
 

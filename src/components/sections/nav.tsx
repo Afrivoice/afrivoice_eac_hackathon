@@ -10,9 +10,9 @@ const Nav = () => {
       <img src={logo} alt="logo" className="w-[150px]" />
       <a
         href="#"
-        className="bg-[#009263] text-white font-bold px-5 py-2.5 rounded-md hover:bg-[#007a52] transition-colors text-sm"
+        className="bg-[#009263] text-white font-bold px-5 py-2.5 rounded-md hover:bg-[#007a52] transition-colors text-sm text-center"
       >
-        Join Now
+        Join Now  (<span className="text-xs">Coming Soon!</span>)
       </a>
     </Width>
   );
