@@ -27,10 +27,6 @@ const Tracks = () => {
         <p className="font-black">Edge model conditions:</p>
         <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
           <li className="text-justify">
-            <span className="font-black">Offline Capability:</span> The model
-            must fully offline (no dependency on cloud inference).
-          </li>
-          <li className="text-justify">
             <span className="font-black">Low Resource Footprint:</span> RAM
             usage ≤ <span className="font-black">8 GB</span> during inference.
             Model size &lt; <span className="font-black">1 Billion parameters</span>.
@@ -46,6 +42,12 @@ const Tracks = () => {
           <li className="text-justify">
             <span className="font-black">Latency Requirements:</span> Real time
             or near real-time transcription (≤ 2x audio duration)
+          </li>
+          <li className="text-justify">
+            Good to have capabilities:
+            <ul className="list-disc list-inside pl-4 flex flex-col gap-2">
+              <li><span className="font-black">Offline Capability:</span> The model must run fully offline (no dependency on cloud inference).</li>
+            </ul>
           </li>
         </ul>
       </div>

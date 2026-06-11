@@ -22,10 +22,10 @@ const columns: ColumnDef<Type>[] = [
 
 const Dates = () => {
   const data: Type[] = [
-    {
-      date: "June 05, 2026",
-      milestone: "Hackathon announcement",
-    },
+    // {
+    //   date: "June 05, 2026",
+    //   milestone: "Hackathon announcement",
+    // },
     {
       date: "June 15, 2026",
       milestone: "Hackathon Launch",

@@ -1,6 +1,7 @@
 // Assets
 import logo from "../../assets/logo.svg";
 import mcaai from "../../assets/mcaai.svg";
+import maseno from "../../assets/maseno.png";
 
 // Components
 import Width from "../width";
@@ -10,9 +11,16 @@ export const OrganizerCard = ({ className = "" }: { className?: string }) => (
   <Width>
     <div className={`p-6 bg-white rounded gap-8 flex flex-wrap flex-col sm:flex-row items-center ${className}`}>
       <p>Organized by:</p>
-      <div className="flex items-center gap-4 flex-wrap justify-center">
-        <img src={mcaai} alt="mcaai" className="w-[200px]" />
-        <img src={logo} alt="gates" className="w-[150px]" />
+      <div className="flex items-center gap-6 flex-wrap justify-center">
+        <a href="https://mcaai.maseno.ac.ke/" target="_blank" rel="noopener noreferrer">
+          <img src={mcaai} alt="mcaai" className="w-[200px]" />
+        </a>
+        <a href="https://www.maseno.ac.ke/" target="_blank" rel="noopener noreferrer">
+          <img src={maseno} alt="maseno university" className="w-[160px]" />
+        </a>
+        <a href="https://digitalumuganda.com/" target="_blank" rel="noopener noreferrer">
+          <img src={logo} alt="digital umuganda" className="w-[150px]" />
+        </a>
       </div>
     </div>
   </Width>
